@@ -1,0 +1,116 @@
+body {
+  font-family: "Courier New";
+  font-weight: 400;
+  color: white;
+}
+
+.amount{
+  color: inherit;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.slider{
+  width: 300px;
+  opacity: 0.7;
+}
+
+.dd{
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 20px;
+  color: inherit;
+  background-color: black;
+  opacity:0.7;
+  border-color: transparent;
+  display:inline;
+}
+
+#backgroundImg {
+  min-height: 1300px;
+  width: 100%;
+  height: auto;
+  background-image: url(bgImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#searchOptions {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+#searchTitle {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+#optionHeadings {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  color: inherit;
+}
+
+#searchBar {
+  font-size: 20px;
+  min-width:250px;
+  display: block;
+  opacity: 0.5;
+
+}
+
+#checkBoxCollumns{
+  display: inline-block;
+  width:200px;
+}
+
+#searchButton{
+  border-radius: 50px;
+  background-color: grey;
+  border-color: white;
+  color: inherit;
+  font-size: 26px;
+}
+
+#results div{
+  margin-left:25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:10px;
+  border-color: black;
+  border-width: medium;
+  border:1px solid black;
+  border-radius: 20px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 210px;
+}
+
+#results p{
+  margin: 0px;
+  width:200px;
+  display:inline-block;
+  color:black;
+}
+
+#results p h5{
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+#details{
+  position: fixed;
+  top:35%;
+  left:35%;
+  width:30%;
+  padding:25px;
+  color:black;
+  background-color: white;
+  border:1px solid black;
+  border-radius: 20px;
+  display: none;
+}

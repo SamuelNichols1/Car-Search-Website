@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Car Search Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="index.js">
+
+</script>
+<body>
+
+  <div id="backgroundImg">
+    <div id="searchOptions">
+      <h1 id="searchTitle">Find Your Dream Car</h1>
+
+      <p>
+        <label for="yearAmount">Car Year :</label>
+        <input class="amount" type="text" id="yearAmount" readonly>
+      </p>
+      <div class="slider" id="slider-rangeYear"></div>
+
+      <p>
+        <label for="milageAmount">Milage :</label>
+        <input class="amount" type="text" id="milageAmount" readonly>
+      </p>
+      <div class="slider" id="slider-rangeMilage"></div>
+
+      <p>
+        <label for="priceAmount">Price :</label>
+        <input class="amount" type="text" id="priceAmount" readonly>
+      </p>
+      <div class="slider" id="slider-rangePrice"></div>
+
+      <p>
+        <label for="engineAmount">Engine Size :</label>
+        <input class="amount" type="text" id="engineAmount" readonly>
+      </p>
+      <div class="slider"id="slider-rangeEngine"></div>
+
+      <p>
+        <label for="mpgAmount">MPG :</label>
+        <input class="amount" type="text" id="mpgAmount" readonly>
+      </p>
+      <div class="slider" id="slider-rangeMpg"></div>
+
+      <p>
+        <label for="searsAmount">No. of Seats :</label>
+        <input class="amount" type="text" id="seatsAmount" readonly>
+      </p>
+      <div class="slider" id="slider-rangeSeats"></div>
+
+
+      <p>
+        <label for="fuelTypeDD">Fuel type :</label>
+        <select  class="dd" id="fuelTypeDD">
+          <option value="any">Any</option>
+          <option value="petrol">Petrol</option>
+          <option value="diesel">Diesel</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="Electric">Electric</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="colourDD">Colour :</label>
+        <select class="dd" id="colourDD">
+          <option value="any">Any</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="grey">Grey</option>
+          <option value="blue">Blue</option>
+          <option value="silver">Silver</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="brown">Brown</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="transmissionDD">Transmission :</label>
+        <select  class="dd" id="transmissionDD">
+          <option value="any">Any</option>
+          <option value="manual">Manual</option>
+          <option value="Automatic">Automatic</option>
+        </select>
+      </p>
+
+      <legend class=>Body Style :</legend>
+      <div id="checkBoxCollumns">
+        <input type="checkbox" name="bodyStyle" value="hatchback" id="hatchbackCB" checked>Hatchback<br>
+        <input type="checkbox" name="bodyStyle" value="saloon" id="saloonCB" checked>Saloon<br>
+        <input type="checkbox" name="bodyStyle" value="estate" id="estateCB" checked>Estate<br>
+        <input type="checkbox" name="bodyStyle" value="suv" id="suvCB" checked>SUV<br>
+        <input type="checkbox" name="bodyStyle" value="prestige" id="prestigeCB" checked>Coupe<br>
+        <input type="checkbox" name="bodyStyle" value="people carrier" id="peoplecarrierCB" checked>People Carrier<br>
+        <input type="checkbox" name="bodyStyle" value="convertible" id="convertibleCB" checked>Convertible<br>
+        <input type="checkbox" name="bodyStyle" value="sports" id="sportsCB" checked>Sports<br>
+      </div>
+      <div id="checkBoxCollumns">
+        <input type="checkbox" name="bodyStyle" value="prestige" id="prestigeCB" checked>Prestige<br>
+        <input type="checkbox" name="bodyStyle" value="performance" id="performanceCB" checked>Performance<br>
+        <input type="checkbox" name="bodyStyle" value="large" id="largeCB" checked>Large<br>
+        <input type="checkbox" name="bodyStyle" value="small" id="smallCB" checked>Small<br>
+        <input type="checkbox" name="bodyStyle" value="city" id="cityCB" checked>City<br>
+        <input type="checkbox" name="bodyStyle" value="4x4" id="4x4CB" checked>4x4<br>
+        <input type="checkbox" name="bodyStyle" value="mpv" id="mpvCB" checked>MPV<br>
+      </div>
+
+      <br /><br />
+      <legend class=>No. of Doors :</legend>
+      <input type="checkbox" name="doors" value="2/3" id="3CB" checked>2/3<br>
+      <input type="checkbox" name="doors" value="4/5" id="5CB" checked>4/5<br>
+
+<br /><br />
+      <button onclick="search()" id="searchButton">Search</button>
+    </div>
+  </div>
+
+  <div id="results">
+
+  </div>
+
+  <div id="details">
+    <p>
+      <p id="presentationMake">
+      </p>
+      <p id="presentationRange">
+      </p>
+      <p id="description">
+      </p>
+      <p id="mileage">
+      </p>
+      <p id="year">
+      </p>
+      <p id="transmission">
+      </p>
+      <p id="displayColour">
+      </p>
+      <p id="fuel">
+      </p>
+    </p>
+
+    <button onclick="closeForm(this.id)">Close</button>
+  </div>
+
+
+</body>
+
+
+
+</html>
